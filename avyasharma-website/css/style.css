@@ -1,0 +1,805 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
+body{
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(45,45,45,1) 30%, rgba(0,0,0,1) 54%, rgba(133,133,133,1) 76%, rgba(212,212,212,1) 100%);
+  color: #ffffff;
+}
+
+/*Global*/
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: visible;
+}
+
+.button_1{
+  height: 60px;
+  width: 115px;
+  background: #00CAFF;
+  border: 0;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.button_1:hover{
+  background: #00A0FF;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  color: #ffffff;
+  background-color: rgba(0,0,0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+  min-height: 50px;
+  overflow: hidden;
+  border-bottom: #ffffff 3px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 5px 20px 0 20px;
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin: 0;
+  font-size: 30px;
+}
+
+header nav{
+  float: right;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+header a:hover{
+  color: #00CAFF;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+/*Greeter*/
+#greeter{
+  margin-top: 5px;
+  min-height: 700px;
+  margin-bottom: 200px;
+  background-size: 1200px 600px;
+  background-position: center;
+  overflow: hidden;
+  text-align: center;
+  color: #ffffff;
+}
+
+#greeter h1{
+  margin-top:50px;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+#greeter img{
+  border-radius: 60%;
+  width: 80%;
+  height: 410px;
+}
+
+#greeter p{
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+/*Portfolio Boxes*/
+#boxes .container h1{
+  text-align: left;
+  font-size: 30px;
+  margin-top: 2030px;
+  margin-bottom: 65px;
+}
+
+#boxes{
+  margin-bottom: 100px;
+}
+
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  overflow: hidden;
+  border-style: solid;
+  border-color: rgba(211, 211, 211, 0.5);
+  margin-right: 5px;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  margin-bottom: 5px;
+}
+
+#boxes .box img{
+  width: 90px;
+}
+
+#boxes .box:hover{
+  transform: scale(1.1);
+  overflow: visible;
+  border-color: black;
+  background-color: rgb(169,169,169);
+}
+
+/*Project Boxes*/
+#portfolio .container h1{
+  text-align: left;
+  font-size: 30px;
+  margin-top: 500px;
+  margin-bottom: 55px;
+}
+
+#portfolio{
+  margin-bottom: 100px;
+}
+
+#portfolio .b1{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  overflow: visible;
+  border-style: solid;
+  border-color: rgba(211, 211, 211, 0.5);
+  margin-right: 5px;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  margin-bottom: 5px;
+}
+
+#portfolio .b1 img{
+  width: 90px;
+}
+
+#portfolio .b1:hover{
+  transform: scale(1.1);
+  overflow: visible;
+  border-color: black;
+  background-color: rgb(169,169,169);
+}
+
+/*Current Projects*/
+#current .container h1{
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 65px;
+}
+
+#current{
+  margin-top: 500px;
+  margin-bottom: 200px;
+}
+
+#current .b2{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  overflow: visible;
+  border-style: solid;
+  border-color: rgba(211, 211, 211, 0.5);
+  margin-right: 5px;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  margin-bottom: 5px;
+}
+
+#current .b2 img{
+  width: 90px;
+}
+
+#current .b2:hover{
+  transform: scale(1.1);
+  overflow: visible;
+  border-color: black;
+  background-color: rgb(169,169,169);
+}
+
+/*About Me, sidebar*/
+aside#side-pic{
+  float: right;
+  width: 30%;
+  margin-top:10px;
+  margin-bottom: 140px;
+}
+
+aside#side-pic .pic img{
+  border-radius: 70%;
+  max-width: 70%;
+  border: 10px solid white;
+  margin-top: 50px;
+}
+
+aside#side-pic .pic h1{
+  margin-top: 0px;
+}
+
+/*Main-col*/
+article#main-col{
+  float: left;
+  width: 65%;
+  margin-bottom: 100px;
+}
+
+article#main-col h1{
+  font-size: 30px;
+  margin-top: 45px;
+}
+
+article#main-col p{
+  font-size: 17px;
+}
+
+#main .container{
+  margin-top: 800px;
+  margin-bottom: 800px;
+}
+
+/*Contact Section*/
+#contact-page h1{
+  float: none;
+  font-size: 30px;
+  margin-top: 600px;
+}
+
+#contact-page ul{
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact-page li{
+  float: left;
+  text-decoration: none;
+}
+
+#contact-page nav{
+  float: left;
+  font-size: 40px;
+}
+
+#contact-page h2{
+  display: none;
+}
+
+/*Email Form*/
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+textarea{
+  font-family: sans-serif;
+}
+
+
+/*Footer*/
+footer{
+  border-top: #ffffff 3px solid;
+  padding: 20px;
+  margin-top: 600px;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+}
+
+/*Media Queries*/
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1400px){
+    #greeter img{
+      max-width: 100%;
+      max-height: 20%;
+    }
+
+    #greeter .container{
+      margin-top: 10px;
+    }
+
+    #greeter h1{
+      font-size: 45px;
+    }
+
+    aside#side-pic .pic img{
+      border-radius: 70%;
+      top: 30px;
+      max-width: 80%;
+      border: 10px solid white;
+      margin-top: 70px;
+      margin-bottom: 300px
+    }
+
+    article#main-col{
+      margin-bottom: 500px;
+    }
+
+    article#main-col p{
+      font-size: 13px;
+    }
+
+    #boxes .box, #portfolio .b1, #current .b2{
+      float: left;
+      text-align: center;
+      width: 45%;
+      padding: 10px;
+      overflow: visible;
+      border-style: solid;
+      border-color: rgba(211, 211, 211, 0.5);
+      margin-right: 5px;
+      background-color: rgba(211, 211, 211, 0.5);
+      border-radius: 10px;
+      transition: all .2s ease-in-out;
+      margin-bottom: 5px;
+    }
+
+    #portfolio .container {
+      margin-top: 50px;
+    }
+
+    #portfolio .container p, #boxes .container p, #current .container p{
+      font-size: 15px;
+    }
+
+    #boxes .container{
+      margin-top: 1250px;
+    }
+
+    #main .container{
+      margin-bottom: 200px;
+    }
+
+    #current .container{
+      margin-top: 800px;
+    }
+
+    header nav{
+      font-size: 15px;
+    }
+  }
+
+/* Landscape iPhone X*/
+@media only screen
+  and (min-width: 375px)
+  and (max-height: 812px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    #boxes {
+      margin-top: 1600px;
+    }
+}
+
+@media(max-width: 768px){
+  header #branding, header nav, header nav li, #contact-page form, article#main-col, aside#side-pic{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header li{
+    font-size: 20px;
+  }
+
+  header nav{
+    padding-right: 10px;
+  }
+
+  #greeter{
+    margin-top: 100px;
+  }
+
+  #greeter h1{
+    font-size: 10px;
+  }
+
+  #greeter img{
+    max-width: 100%;
+    height: 200px;
+  }
+
+  #boxes .box, #portfolio .b1, #current .b2{
+    float: none;
+    text-align: center;
+    width: 95%;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    height: 0%;
+  }
+
+  #portfolio .container h1{
+    margin-top: 50px;
+  }
+
+  #boxes .container h1{
+    margin-top: 50px;
+  }
+
+  aside#side-pic .pic img{
+    border-radius: 70%;
+    max-width: 50%;
+    border: 10px solid white;
+    margin-top: 0px;
+  }
+
+  article#main-col{
+    margin-bottom: 50px;
+  }
+
+  article#main-col p{
+    font-size: 15px;
+  }
+
+  header #branding h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  header{
+    min-height: 5%;
+    padding-bottom: 20px;
+  }
+
+  header li{
+    display: inline;
+    padding: 20px 3px 15px 0px;
+  }
+
+  header nav{
+    float: left;
+    font-size: 10.5px;
+    max-width: 100%;
+  }
+
+  #main .container{
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+
+  #greeter h1{
+    margin-top: 100px;
+    font-size: 40px;
+  }
+
+  #greeter img{
+    max-width: 100%;
+  }
+
+  #contact-page button, .quote button{
+    display:block;
+    width: 100%;
+  }
+
+  #contact-page form input[type=text], #contact-pageinput[type=email], .emailForm input, .emailForm textarea{
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  #contact-page .container h1{
+    margin-top: 200px;
+    margin-bottom: 15px;
+  }
+
+  .button_1{
+    margin-bottom: 5px;
+  }
+}
+
+/* Portrait iPad */
+@media only screen
+  and (min-width: 768px)
+  and (max-height: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    header nav{
+      font-size: 20px;
+    }
+
+    header li{
+      padding-right: 10px;
+    }
+
+    #greeter img{
+      max-width: 100%;
+    }
+
+    #greeter .container{
+      margin-bottom: 500px;
+    }
+
+    #greeter .container h1{
+      margin-top: 200px;
+    }
+
+    aside#side-pic .pic img{
+      border-radius: 70%;
+      top: 30px;
+      max-width: 60%;
+      border: 10px solid white;
+      margin-top: 40px;
+    }
+
+    article#main-col{
+      margin-bottom: 50px;
+    }
+
+    article#main-col p{
+      font-size: 20px;
+    }
+
+    #main .container{
+      margin-top: 500px;
+    }
+
+    #boxes .container h1{
+      margin-top: 100px;
+    }
+
+    #boxes .box, #portfolio .b1, #current .b2{
+      float: left;
+      text-align: center;
+      width: 40%;
+      padding: 10px;
+      overflow: visible;
+      border-style: solid;
+      border-color: rgba(211, 211, 211, 0.5);
+      margin-right: 5px;
+      background-color: rgba(211, 211, 211, 0.5);
+      border-radius: 10px;
+      transition: all .2s ease-in-out;
+      margin-bottom: 5px;
+    }
+
+    #portfolio .container {
+      margin-top: 600px;
+      margin-bottom: 500px;
+    }
+
+    #boxes .container{
+      margin-top: 50px;
+    }
+
+    #current .container{
+      margin-top: 800px;
+    }
+
+    #contact-page h1{
+      margin-top: 100px;
+      padding-right: 100px;
+    }
+
+    #contact-page .container{
+      margin-top: 100px;
+    }
+}
+
+/* Landscape iPad */
+@media only screen
+  and (min-width: 768px)
+  and (max-height: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    header nav{
+      font-size: 15px;
+    }
+
+    header li{
+      padding-right: 10px;
+    }
+
+    #greeter img{
+      max-width: 100%;
+    }
+
+    #greeter .container h1{
+      margin-top: 60px;
+      font-size: 50px;
+    }
+
+    aside#side-pic .pic img{
+      border-radius: 70%;
+      top: 30px;
+      max-width: 75%;
+      border: 10px solid white;
+      margin-top: 100px;
+    }
+
+    article#main-col{
+      margin-bottom: 50px;
+    }
+
+    article#main-col p{
+      font-size: 20px;
+    }
+
+    #main-col .container{
+      margin-top: 100px;
+    }
+
+    #boxes .container h1{
+      margin-top: 100px;
+    }
+
+    #boxes .box, #portfolio .b1, #current .b2{
+      float: left;
+      text-align: center;
+      width: 40%;
+      padding: 10px;
+      overflow: visible;
+      border-style: solid;
+      border-color: rgba(211, 211, 211, 0.5);
+      margin-right: 5px;
+      background-color: rgba(211, 211, 211, 0.5);
+      border-radius: 10px;
+      transition: all .2s ease-in-out;
+      margin-bottom: 5px;
+    }
+
+    #portfolio .container {
+      margin-top: 600px;
+      margin-bottom: 500px;
+    }
+
+    #boxes .container{
+      margin-top: 1250px;
+    }
+
+    #current .container{
+      margin-top: 800px;
+    }
+
+    #contact-page h1{
+      margin-top: 100px;
+      padding-right: 100px;
+    }
+
+    #contact-page .container{
+      margin-top: 100px;
+    }
+}
+
+/* Portrait iPad Pro*/
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    aside#side-pic .pic img{
+      border-radius: 70%;
+      top: 30px;
+      max-width: 100%;
+      border: 10px solid white;
+      margin-top: 190px;
+    }
+
+    #boxes .box, #portfolio .b1, #current .b2{
+      float: left;
+      text-align: center;
+      width: 40%;
+      padding: 10px;
+      overflow: visible;
+      border-style: solid;
+      border-color: rgba(211, 211, 211, 0.5);
+      margin-right: 5px;
+      background-color: rgba(211, 211, 211, 0.5);
+      border-radius: 10px;
+      transition: all .2s ease-in-out;
+      margin-bottom: 5px;
+    }
+
+    #portfolio .container {
+      margin-top: 50px;
+    }
+
+    #boxes .container{
+      margin-top: 700px;
+    }
+
+    #current .container{
+      margin-top: 800px;
+    }
+
+    #greeter img{
+      max-width: 100%;
+    }
+
+    #greeter .container{
+      margin-top: 250px;
+    }
+
+    #main.container{
+      margin-top: 700px;
+    }
+
+    article#main-col h1{
+      margin-top: 200px;
+    }
+
+    article#main-col p{
+      font-size: 15px;
+    }
+}
+
+/* Landscape iPad Pro */
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    #greeter h1{
+      margin-top: 25px;
+    }
+
+    aside#side-pic .pic img{
+      border-radius: 70%;
+      top: 30px;
+      max-width: 100%;
+      border: 10px solid white;
+      margin-top: 50px;
+    }
+
+    #boxes .box, #portfolio .b1, #current .b2{
+      float: left;
+      text-align: center;
+      width: 40%;
+      padding: 10px;
+      overflow: visible;
+      border-style: solid;
+      border-color: rgba(211, 211, 211, 0.5);
+      margin-right: 5px;
+      background-color: rgba(211, 211, 211, 0.5);
+      border-radius: 10px;
+      transition: all .2s ease-in-out;
+      margin-bottom: 5px;
+    }
+
+    #portfolio .container {
+      margin-top: 50px;
+    }
+
+    #boxes .container{
+      margin-top: 1700px;
+    }
+
+    #current .container{
+      margin-top: 800px;
+    }
+
+    #greeter img{
+      max-width: 100%;
+    }
+}

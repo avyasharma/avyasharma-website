@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="My webpage">
+    <meta name="keywords" content="Avi Sharma, Avya Sharma, AS website">
+    <meta name="author" content="Avya Sharma">
+    <title>Avi Sharma | Welcome</title>
+    <link rel="stylesheet" href = "./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+  jQuery($ => {
+    let nav = document.querySelector("nav.navigation");//get the nav element of class navigation
+    let navH = parseInt(window.getComputedStyle(nav).height,20);
+
+    const s = 1250; //scroll speed
+
+    $('a[href*="#"]')//get all the anchors with # in their href
+      .unbind('click.smoothScroll')
+      .bind('click.smoothScroll', event => { //run the event if the following occurs
+        const targetId = event.currentTarget.getAttribute('href').split('#')[1];//gets the current anchor's href, or in other words, gets the target element's id.
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          event.preventDefault();
+          $('html, body').animate({ scrollTop: $(targetElement).offset().top - 194}, s); //Go to (top of coordinates - 194) (worked best for my website)
+        }
+      });
+  });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>AVI</h1>
+        </div>
+        <nav class="navigation">
+          <ul>
+            <li><a class="anchor" href="#greeter">Home</a></li>
+            <li><a class="anchor" href="#main-col">About</a></li>
+            <li><a class="anchor" href="#boxes">Portfolio/Projects</a></li>
+            <li><a class="anchor" href="#list-for-contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="greeter">
+      <div class="container">
+        <h1 id="title"><br>Welcome To My Personal Website</h1>
+        <img src="./img/scenic1.jpg" class="slideshow-img">
+        <!--<img src="./img/scenic1.jpg" class="slideshow-img">
+        <img src="./img/scenic2.jpg" class="slideshow-img">-->
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 id = "page-title" class="page-title">About Me</h1>
+          <p id="p2">I am currently a student at University of Wisconsin–Madison in the Class of '24. I am proficient in Python and Java, but I have coded in HTML and CSS, as well as Javascript and C#. Experienced in backend development with Firebase, but have prior experience with frontend development (such as this site).
+          </p>
+          <p><br>In my spare time, I like to read books, watch tech reviews from Marques Brownlee, or just chill with friends. I am a big fan of the Premier League and La Liga, and am an avid 49ers supporter (Green Bay is going to love me for that).</p>
+          <p id="p1"><br>Please navigate this site accordingly. If you have any questions for me, or if you would like to reach out to me, simply go to the contact section to learn more. Happy browsing!</p>
+        </article>
+
+        <aside id="side-pic">
+          <div class="pic">
+            <img src="./img/hackathon.jpg" alt="Avi's picture">
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <h1>Portfolio</h1>
+        <div class="box" onclick="window.open('Avya_Sharma_Resume.pdf', '_blank');" style="cursor: pointer;">
+          <img src="./img/folder.png">
+          <h3>Resume</h3>
+          <p>Use to access resume. Contains current and past coursework, GPA, past projects, etc.</p>
+        </div>
+        <div class="box" onclick="window.open('https://github.com/avyasharma?tab=repositories', '_blank');" style="cursor: pointer;">
+          <img src="./img/github.png">
+          <h3>Github</h3>
+          <p>Access my github repositories for side projects (from hackathons or my free time.)</p>
+        </div>
+        <div class="box" onclick="window.open('https://www.linkedin.com/in/avya-sharma-1a9b33153/', '_blank');" style="cursor: pointer;">
+          <img src="./img/linkedin.png">
+          <h3>Linkedin</h3>
+          <p>Navigates to my Linkedin profile page, which displays my programming experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="current">
+      <div class="container">
+        <h1>Current Project(s)</h1>
+        <div class="b2" onclick="window.open('https://github.com/avyasharma/KingdomGame', '_blank');" style="cursor: pointer;">
+          <img src="./img/sprite.png">
+          <h3>Kingdom Game (w/ Team)</h3>
+          <p>Turn base strategy game combined with in-game fighting opportunities for players. Multiplayer game</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h1>Past Projects</h1>
+        <div class="b1" onclick="window.open('https://github.com/avyasharma/avyasharma-website', '_blank');" style="cursor: pointer;">
+          <img src="./img/github.png">
+          <h3>Avi's Personal Website</h3>
+          <p>Repo contains this website's code</p>
+        </div>
+        <div class="b1" onclick="window.open('https://github.com/avyasharma/the-coalition', '_blank');" style="cursor: pointer;">
+          <img src="./img/fistbump.png">
+          <h3>The Coalition</h3>
+          <p>Used for connecting protesters online.</p>
+        </div>
+        <div class="b1" onclick="window.open('https://github.com/avyasharma/Navigation', '_blank');" style="cursor: pointer;">
+          <img src="./img/navigation.png">
+          <h3>Navigation App</h3>
+          <p>Aids user in navigating from Point A to Point B.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-page">
+      <div class="container">
+        <h1 id="contact">Contact</h1>
+        <h2 id="thanks">Thank you! I will reply in 1-2 business days</h2>
+        <nav id="list-for-contact">
+          <ul>
+            <li>
+              <form action="mail.php" method="post" class="emailForm" id="form">
+                <input type="email" id="email" name="emailInfo" placeholder="Email address">
+                <input type="text" id="topic" name="subjectInfo" placeholder="Subject">
+                <textarea id="body" name="write" placeholder="Enter your message here" style="height:200px"></textarea>
+                <button type="submit" class="button_1" name="submit">Submit</button>
+              </form>
+            </li><br>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+<!--$email_address  = filter_email_header($email_address);-->
+    <footer>
+      <p>Avi Sharma, Copyright &copy; 2020</p>
+    </footer>
+  </body>
+</html>
